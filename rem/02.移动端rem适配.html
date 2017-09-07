@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <style>
+        html{
+            font-size: 100px;
+        }
+        /*320屏幕的时候  50px*/
+        /*640屏幕的时候  100px*/
+
+        /*如果我想适配主流的移动设备 尺寸*/
+        /*适配主流机型没有问题*/
+
+        @media (min-width: 320px) {
+            html{
+                font-size: 50px;
+            }
+        }
+
+        @media (min-width: 360px) {
+            html{
+                font-size: 56.25px;
+            }
+        }
+
+        @media (min-width: 640px) {
+            html{
+                font-size: 100px;
+            }
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 1rem;
+            font-size: 0.4rem;
+            line-height: 1rem;
+            text-align: center;
+            background: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>购物车</header>
+</body>
+</html>

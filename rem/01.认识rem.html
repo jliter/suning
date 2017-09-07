@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        html{
+            font-size: 50px;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            line-height: 1;/*一倍的文字大小的行高*/
+
+            font-size: 20px;
+        }
+
+
+        .em{
+            font-size: 2em;
+        }
+
+        .rem{
+            font-size: 2rem;
+        }
+
+        .remBox{
+            height: 1rem;
+            width: 1rem;
+            background: red;
+            border: 0.2rem solid #ccc;
+            position: relative;
+            left: 1rem;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1.em.rem 默认的基数是16px  1em 1rem 大小是16px (文字默认的大小就是16px)
+
+        2.em 基数是基于父元素的字体大小
+
+        3.基于谁做计算的？
+        rem 当中的r代表是 root 根元素  html当中的根元素是  html标签
+        rem的基数是基于文档根元素html标签得分字体大小来决定的
+
+        在使用px这个单位的任何地方都可以用
+    -->
+    <div class="em">ABC</div>
+    <div class="rem">ABC</div>
+
+    <div class="remBox"></div>
+</body>
+</html>
